@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+<a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>    
+<a href="d.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DESTINATION</a>
+    <a href="ABOUT.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="Gallery.html" class="w3-bar-item w3-button">GALLERY</a>
+        <a href="freeroam.html" class="w3-bar-item w3-button">FREE-ROAM</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 95%;
+        width: 100%;
+        float: center;
+        padding: 1% 1% 1% 1%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 12.96065, lng: 80.0532};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOEG_jnFimbkGEDvu6tY7wQrqCD8WjUPc&callback=initMap">
+    </script>
+    <footer style="text-align:center;">
+ <a href="https://www.facebook.com/"> <i class="fa fa-facebook"></i></a>
+ <a href="https://www.instagram.com/"> <i class="fa fa-instagram"></i></a>
+  <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fa fa-snapchat"></i></a>
+ <a href="https://in.pinterest.com/"> <i class="fa fa-pinterest-p"></i></a>
+  <a href="https://www.google.co.in/search?q=twitter+login&rlz=1C1GIWA_enIN740IN740&oq=twitter&aqs=chrome.3.69i60j69i57j69i60j0l3.3945j0j7&sourceid=chrome&ie=UTF-8"><i class="fa fa-twitter"></i></a>
+  <a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+<p class="w3-medium">Powered by <a href="www.technokrates.com" target="_blank">wiredTechnokrates</a></p></footer>
+
+  </body>
+</html>

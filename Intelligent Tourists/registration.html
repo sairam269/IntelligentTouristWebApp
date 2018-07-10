@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<title>Intelligent Tourist</title>
+<head>
+ 	<link rel="stylesheet" type="text/css" href="stylecopy.css">
+ 	<link rel="alternate stylesheet" type="text/css" href="stylecopy2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script type="text/javascript" src="libraries/p5.min.js"></script>
+    <script type="text/javascript" src="libraries/p5.sound.js"></script>
+    <script type="text/javascript" src="libraries/p5.dom.js"></script>
+    <script type="text/javascript" src="libraries/p5.dom.min.js"></script>
+    <script type="text/javascript" src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+</head>
+<body>
+  <header>
+Intelligent <span style="color:red;">Tourist</span> WebApp
+</header>
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    
+    <input id="br1" type="text" name="username" placeholder="Username" />
+    <input type="text" name="email" placeholder="E-mail" />
+    <input id="br2" type="password" name="password" placeholder="Password" />
+    <input type="password" name="password2" placeholder="Retype password" />
+    <input type="number"  name="phnum" placeholder="Enter the number"/>
+    <input type="submit" name="signup_submit" value="Sign me up" onclick="Register();" />
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+  <button onclick="location.href='www.facebook.com';" class="social-signin facebook">Log in with Facebook</button>
+    <button onclick="location.href='www.twitter.com';" class="social-signin twitter">Log in with Twitter</button>
+    <button onclick="location.href='www.gmail.com';" class="social-signin google">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+<footer>
+<a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a>
+<a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fa fa-snapchat"></i></a>
+<a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter"></i></a>
+<a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+</footer>
+</body>
+</html>
